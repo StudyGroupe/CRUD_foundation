@@ -1,0 +1,67 @@
+@mixin container(){
+    width: 100%;
+    min-width: 350px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body{
+    header{
+        @include container;
+        h1{
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid #323232;
+            background-color: #1ba3c7;
+            color: #fff;
+            font-size: 16px;
+            padding: 5px;
+        }
+    }
+    form{
+        @include container;
+        table{
+            width: 100%;
+            padding: 20px;
+            margin-top: 20px;
+            tr{
+                th{
+                    text-align:right;
+                    width: 30%;
+                    padding-right: 10px;
+                }
+                td{
+                    width: 70%;
+                    padding-bottom: 5px;
+                    input{
+                        width: 90%;
+                        border:1px solid #373737;
+                        border-radius: 3px;
+                        font-size: 14px;
+                        padding: 3px 7px;
+
+                    }
+                }
+            }
+        }
+        .form-item{
+            margin: 0 auto;
+            width: 100px;
+            text-align: center;
+            input{
+                border: 1px solid #ccc;
+                border-radius: 3px;
+                background-color: #ccc;
+                box-shadow: 0px 4px 0px 0px #afafaf;
+                outline: 0;
+                &:active{
+                    transform: translateY(4px);
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
