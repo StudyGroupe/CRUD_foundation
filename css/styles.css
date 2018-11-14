@@ -1,0 +1,66 @@
+body header {
+  width: 100%;
+  min-width: 350px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body header h1 {
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #323232;
+  background-color: #1ba3c7;
+  color: #fff;
+  font-size: 16px;
+  padding: 5px;
+}
+body form {
+  width: 100%;
+  min-width: 350px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body form table {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+body form table tr th {
+  text-align: right;
+  width: 30%;
+  padding-right: 10px;
+}
+body form table tr td {
+  width: 70%;
+  padding-bottom: 5px;
+}
+body form table tr td input {
+  width: 90%;
+  border: 1px solid #373737;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 3px 7px;
+}
+body form .form-item {
+  margin: 0 auto;
+  width: 100px;
+  text-align: center;
+}
+body form .form-item input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #ccc;
+  box-shadow: 0px 4px 0px 0px #afafaf;
+  outline: 0;
+}
+body form .form-item input:active {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
