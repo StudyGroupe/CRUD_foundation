@@ -15,16 +15,22 @@
         <table>
             <tr>
                 <th>NAME:</th>
-                <td><input type="text" name="name"></td>
+                <td><input id="user_name" type="text" name="name" placeholder="ex)jack johnson"></td>
             </tr>
             <tr>
                 <th>PASSWORD:</th>
-                <td><input type="password" name="pass"></td>
+                <td><input id="user_pass" type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <th>CONFIRM:</th>
+                <td><input id="user_pass2" type="password" name="pass2"></td>
             </tr>
         </table>
         <div class="form-item">
-            <input type="submit" value="CHECK">
+            <input type="submit" id="check" value="CHECK">
         </div>
     </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/validate.js"></script>
 </body>
 </html>
