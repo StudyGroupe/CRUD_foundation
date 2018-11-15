@@ -1,5 +1,4 @@
 $(function(){
-    alert('hoge');
     $("#check").on("click", function(){
         if(document.getElementById("user_name").value == "" ||
             document.getElementById("user_pass").value == ""){
