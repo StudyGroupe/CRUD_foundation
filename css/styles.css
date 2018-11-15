@@ -57,6 +57,7 @@ body form .form-item input {
   background-color: #ccc;
   box-shadow: 0px 4px 0px 0px #afafaf;
   outline: 0;
+  font-size: 14px;
 }
 body form .form-item input:active {
   transform: translateY(4px);
