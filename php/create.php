@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Document</title>
+    <title>CREATE</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -15,15 +15,15 @@
         <table>
             <tr>
                 <th>NAME:</th>
-                <td><input id="user_name" type="text" name="name" placeholder="ex)jack johnson"></td>
+                <td><input id="user_name" type="text" name="user_name" placeholder="ex)jack johnson"></td>
             </tr>
             <tr>
                 <th>PASSWORD:</th>
-                <td><input id="user_pass" type="password" name="pass"></td>
+                <td><input id="user_pass" type="password" name="user_pass"></td>
             </tr>
             <tr>
                 <th>CONFIRM:</th>
-                <td><input id="user_pass2" type="password" name="pass2"></td>
+                <td><input id="user_pass2" type="password" name="user_pass2"></td>
             </tr>
         </table>
         <div class="form-item">
