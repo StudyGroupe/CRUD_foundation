@@ -29,6 +29,9 @@
         <div class="form-item">
             <input type="submit" id="check" value="CHECK">
         </div>
+        <div class="form-item">
+            <input type="button" value="USER LIST">
+        </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/validate.js"></script>

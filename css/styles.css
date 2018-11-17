@@ -48,16 +48,23 @@ body form table tr td input {
 }
 body form .form-item {
   margin: 0 auto;
-  width: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+body form .form-item p {
+  width: 100%;
   text-align: center;
 }
 body form .form-item input {
+  width: 150px;
   border: 1px solid #ccc;
   border-radius: 3px;
   background-color: #ccc;
   box-shadow: 0px 4px 0px 0px #afafaf;
   outline: 0;
   font-size: 14px;
+  color: #ffffff;
 }
 body form .form-item input:active {
   transform: translateY(4px);

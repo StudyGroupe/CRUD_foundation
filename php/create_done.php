@@ -1,16 +1,22 @@
 <?php
 $user_name = $_POST['user_name'];
 $user_pass = $_POST['user_pass'];
-$DATABASE_SOURCENAME = 'mysql:dbname=user;hostname=localhost;';
+$DATABASE_SOURCENAME = 'mysql:dbname=crud_foundation;hostname=localhost;';
 $DATABASE_USERNAME = 'root';
 $DATABASE_PASSWORD = 'root';
 
 try{
     $dbh = new PDO($DATABASE_SOURCENAME,$DATABASE_USERNAME,$DATABASE_PASSWORD);
+    $sql = 'INSERT INTO user (name,password) VALUES (?,?)';
+    $stmt = $dbh->prepare($sql);
 
-    echo '接続せいこう';
+    //sqlの実行
+    $stmt->execute(array(
+        $user_name,
+        $user_pass
+    ));
 
-
+    $dbh = null;
 }catch(PDOException $e){
     $e->getMessage();
     exit();
@@ -31,23 +37,9 @@ try{
         <h1>ADD NEW USER</h1>
     </header>
     <form action="create_done.php" method="post">
-        <table>
-            <tr>
-                <th>NAME:</th>
-                <td><?php echo $user_name ?></td>
-            </tr>
-            <tr>
-                <th>PASSWORD:</th>
-                <td><p>※Can't display for security.</p></td>
-            </tr>
-        </table>
         <div class="form-item">
-            <input type="submit" id="check" value="SIGN UP">
+            <p>Completed the account registration!</p>
         </div>
-        <input type="hidden" value="<?php echo $user_name ?>">
-        <input type="hidden" value="<?php echo $user_pass ?>">
     </form>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/validate.js"></script>
 </body>
 </html>
