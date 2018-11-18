@@ -1,6 +1,7 @@
 <?php
 $user_name = $_POST['user_name'];
 $user_pass = $_POST['user_pass'];
+$user_tel = $_POST['user_tel'];
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +24,10 @@ $user_pass = $_POST['user_pass'];
                 <td><?php echo $user_name ?></td>
             </tr>
             <tr>
+                <th>TEL:</th>
+                <td><?php echo $user_tel ?></td>
+            </tr>
+            <tr>
                 <th>PASSWORD:</th>
                 <td><p>※Can't display for security.</p></td>
             </tr>
@@ -32,6 +37,7 @@ $user_pass = $_POST['user_pass'];
         </div>
         <input type="hidden" value="<?php echo $user_name ?>" name="user_name">
         <input type="hidden" value="<?php echo $user_pass ?>" name="user_pass">
+        <input type="hidden" value="<?php echo $user_tel ?>" name="user_tel">
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/validate.js"></script>

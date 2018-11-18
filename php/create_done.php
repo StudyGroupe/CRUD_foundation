@@ -1,19 +1,23 @@
 <?php
 $user_name = $_POST['user_name'];
+$user_tel = $_POST['user_tel'];
 $user_pass = $_POST['user_pass'];
+
+//DB接続情報
 $DATABASE_SOURCENAME = 'mysql:dbname=crud_foundation;hostname=localhost;';
 $DATABASE_USERNAME = 'root';
 $DATABASE_PASSWORD = 'root';
 
 try{
     $dbh = new PDO($DATABASE_SOURCENAME,$DATABASE_USERNAME,$DATABASE_PASSWORD);
-    $sql = 'INSERT INTO user (name,password) VALUES (?,?)';
+    $sql = 'INSERT INTO user (name,tel,password) VALUES (?,?,?)';
     $stmt = $dbh->prepare($sql);
 
     //sqlの実行
     $stmt->execute(array(
         $user_name,
-        $user_pass
+        $user_tel,
+        $user_pass,
     ));
 
     $dbh = null;
@@ -39,6 +43,9 @@ try{
     <form action="create_done.php" method="post">
         <div class="form-item">
             <p>Completed the account registration!</p>
+        </div>
+        <div class="form-item">
+            <input type="button" value="USER LIST" onClick="location.href='read.php'">
         </div>
     </form>
 </body>

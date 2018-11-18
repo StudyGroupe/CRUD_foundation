@@ -18,6 +18,10 @@
                 <td><input id="user_name" type="text" name="user_name" placeholder="ex)jack johnson"></td>
             </tr>
             <tr>
+                <th>TEL:</th>
+                <td><input id="user_tel" type="text" name="user_tel" placeholder="ex)XXX-XXXX-XXXX"></td>
+            </tr>
+            <tr>
                 <th>PASSWORD:</th>
                 <td><input id="user_pass" type="password" name="user_pass"></td>
             </tr>
@@ -29,8 +33,9 @@
         <div class="form-item">
             <input type="submit" id="check" value="CHECK">
         </div>
+
         <div class="form-item">
-            <input type="button" value="USER LIST">
+            <input type="button" value="USER LIST" onClick="location.href='read.php'">
         </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

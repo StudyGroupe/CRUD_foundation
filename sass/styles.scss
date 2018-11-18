@@ -21,6 +21,34 @@ body{
             padding: 5px;
         }
     }
+    .table{
+        @include container;
+        table{
+            margin-top: 20px;
+            text-align: center;
+            width: 100%;
+            tr{
+                th{
+                    text-align: center;
+                    background-color: rgb(47, 169, 247);
+                    color: #ffffff;
+                    border: 1px solid black;
+                }
+                td{
+                    border: 1px solid black;
+                    text-align: center;
+                }
+                .edit{
+                    width: 50px;
+                    text-align: center;
+                }
+                .delete{
+                    width: 50px;
+                    text-align: center;
+                }
+            }
+        }
+    }
     form{
         @include container;
         table{
@@ -42,7 +70,6 @@ body{
                         border-radius: 3px;
                         font-size: 14px;
                         padding: 3px 7px;
-
                     }
                 }
             }

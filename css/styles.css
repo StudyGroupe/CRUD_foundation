@@ -16,6 +16,38 @@ body header h1 {
   font-size: 16px;
   padding: 5px;
 }
+body .table {
+  width: 100%;
+  min-width: 350px;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+body .table table {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+body .table table tr th {
+  text-align: center;
+  background-color: #2fa9f7;
+  color: #ffffff;
+  border: 1px solid black;
+}
+body .table table tr td {
+  border: 1px solid black;
+  text-align: center;
+}
+body .table table tr .edit {
+  width: 50px;
+  text-align: center;
+}
+body .table table tr .delete {
+  width: 50px;
+  text-align: center;
+}
 body form {
   width: 100%;
   min-width: 350px;
