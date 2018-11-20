@@ -47,6 +47,11 @@ try{
             </tr>
             <?php endforeach; ?>
         </table>
+        <form action="">
+            <div class="form-item">
+                <input type="button" value="ADD USER" onClick="location.href='create.php'">
+            </div>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/validate.js"></script>

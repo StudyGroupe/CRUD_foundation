@@ -90,10 +90,10 @@ body form .form-item p {
 }
 body form .form-item input {
   width: 150px;
-  border: 1px solid #ccc;
+  border: 1px solid #bdbdbd;
   border-radius: 3px;
-  background-color: #ccc;
-  box-shadow: 0px 4px 0px 0px #afafaf;
+  background-color: #bdbdbd;
+  box-shadow: 0px 4px 0px 0px #a3a1a1;
   outline: 0;
   font-size: 14px;
   color: #ffffff;
