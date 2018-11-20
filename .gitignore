@@ -1,6 +1,7 @@
 #file ignore
 Thumbs.db
 .Ds_Store
+.styles.css.map
 
 #directory ignore
 .sass-cache/
