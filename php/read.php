@@ -42,7 +42,7 @@ try{
                 <td><?php echo $row["id"] ?></td>
                 <td><?php echo $row["name"] ?></td>
                 <td><?php echo $row["tel"] ?></td>
-                <td class="edit"><a href="edit.php?id=<?php echo $row["id"] ?>" >編集</a></td>
+                <td class="edit"><a href="update.php?id=<?php echo $row["id"] ?>" >編集</a></td>
                 <td class="delete"><a href="delete.php?id=<?php echo $row["id"] ?>">削除</a></td>
             </tr>
             <?php endforeach; ?>
