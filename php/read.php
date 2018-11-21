@@ -33,8 +33,8 @@ try{
         <table class="list" border="1">
             <tr>
                 <th>ID</th>
-                <th>名前</th>
-                <th>電話番号</th>
+                <th>NAME</th>
+                <th>TEL</th>
             </tr>
 
             <?php foreach($stmt as $row): ?>
@@ -42,8 +42,8 @@ try{
                 <td><?php echo $row["id"] ?></td>
                 <td><?php echo $row["name"] ?></td>
                 <td><?php echo $row["tel"] ?></td>
-                <td class="edit"><a href="update.php?id=<?php echo $row["id"] ?>" >編集</a></td>
-                <td class="delete"><a href="delete.php?id=<?php echo $row["id"] ?>">削除</a></td>
+                <td class="edit"><a href="update.php?id=<?php echo $row["id"] ?>" >EDIT</a></td>
+                <td class="delete"><a href="delete.php?id=<?php echo $row["id"] ?>">DELETE</a></td>
             </tr>
             <?php endforeach; ?>
         </table>
