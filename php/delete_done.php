@@ -1,5 +1,5 @@
 <?php
-$id = $_GET['id'];
+$id = $_POST['id'];
 //DB接続情報
 $DATABASE_SOURCENAME = 'mysql:dbname=crud_foundation;hostname=localhost;';
 $DATABASE_USERNAME = 'root';
@@ -7,9 +7,10 @@ $DATABASE_PASSWORD = 'root';
 
 try{
     $dbh = new PDO($DATABASE_SOURCENAME,$DATABASE_USERNAME,$DATABASE_PASSWORD);
-    $sql = "select * from user";
+    $sql = "delete from user where id =$id";
     $stmt = $dbh->query($sql);
     $dbh = null;
+
 }catch(PDOException $e){
     $e->getMessage();
     exit();
@@ -28,8 +29,7 @@ try{
     <header>
         <h1>DELETE USER</h1>
     </header>
-    <form action="" method="post">
-
+    <form>
         <div class="form-item">
             <p>Complete dlete user</p>
         </div>

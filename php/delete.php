@@ -41,14 +41,13 @@ try{
             </tr>
         </table>
         <div class="form-item">
-            <input type="submit" id="check" value="CHECK">
+            <input type="submit" id="check" value="DELETE">
         </div>
 
         <div class="form-item">
             <input type="button" value="USER LIST" onClick="location.href='read.php'">
         </div>
         <input type="hidden" name="id" value="<?php echo $_GET['id'] ?>">
-        <input type="hidden" name="tel" value="<?php echo $_GET['tel'] ?>">
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/validate.js"></script>
